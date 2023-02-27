@@ -1,42 +1,49 @@
 package reqresApi.pojo.response;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class SingleResource {
 
     public Integer id;
     public String name;
-    public int year;
+    public Integer year;
     public String color;
-    public String pantone_value;
+    public String pantoneValue;
 
     public SingleResource() {
     }
 
-    public SingleResource(Integer id, String name, int year, String color, String pantone_value) {
+    public SingleResource(Integer id, String name, Integer year, String color, String pantoneValue) {
         this.id = id;
         this.name = name;
         this.year = year;
         this.color = color;
-        this.pantone_value = pantone_value;
+        this.pantoneValue = pantoneValue;
     }
 
+    @JsonProperty("id")
     public Integer getId() {
         return id;
     }
 
+    @JsonProperty("name")
     public String getName() {
         return name;
     }
 
+    @JsonProperty("year")
     public int getYear() {
         return year;
     }
 
+    @JsonProperty("color")
     public String getColor() {
         return color;
     }
 
-    public String getPantone_value() {
-        return pantone_value;
+    @JsonProperty("pantone_value")
+    public String getPantoneValue() {
+        return pantoneValue;
     }
 
     public void setId(Integer id) {
@@ -55,7 +62,7 @@ public class SingleResource {
         this.color = color;
     }
 
-    public void setPantone_value(String pantone_value) {
-        this.pantone_value = pantone_value;
+    public void setPantoneValue(String pantoneValue) {
+        this.pantoneValue = pantoneValue;
     }
 }

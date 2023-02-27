@@ -5,17 +5,17 @@ public class ListResource {
     public String name;
     public Integer year;
     public String color;
-    public String pantone_value;
+    public String pantoneValue;
 
     public ListResource() {
 
     }
-    public ListResource(Integer id, String name, Integer year, String color, String pantone_value) {
+    public ListResource(Integer id, String name, Integer year, String color, String pantoneValue) {
         this.id = id;
         this.name = name;
         this.year = year;
         this.color = color;
-        this.pantone_value = pantone_value;
+        this.pantoneValue = pantoneValue;
     }
 
     public int getId() {
@@ -35,7 +35,7 @@ public class ListResource {
     }
 
     public String getPantone_value() {
-        return pantone_value;
+        return pantoneValue;
     }
 
     public void setId(int id) {
@@ -55,7 +55,7 @@ public class ListResource {
     }
 
     public void setPantone_value(String pantone_value) {
-        this.pantone_value = pantone_value;
+        this.pantoneValue = pantoneValue;
     }
 }
 
